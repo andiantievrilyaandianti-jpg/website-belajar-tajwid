@@ -1,0 +1,151 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background-color: #f0f7f4;
+}
+
+header {
+    background-color: #2d6a4f;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.tab-btn {
+    padding: 10px 20px;
+    border: none;
+    background: #d8e2dc;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.tab-btn.active {
+    background: #2d6a4f;
+    color: white;
+}
+
+.content {
+    display: none; /* Sembunyikan semua materi dulu */
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.content.active {
+    display: block; /* Tampilkan yang aktif */
+}
+
+.card {
+    border-left: 5px solid #2d6a4f;
+    background: #f9f9f9;
+    padding: 15px;
+    margin-top: 15px;
+}
+
+.contoh {
+    font-size: 1.2rem;
+    color: #1b4332;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.container {
+    max-width: 850px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+/* Mengatur jarak konten agar tidak dempet */
+.content {
+    display: none;
+    background: white;
+    padding: 40px; /* Jarak dalam yang lebih luas */
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    margin-top: 30px; /* Jarak dari tombol menu */
+}
+
+.content.active {
+    display: block;
+}
+
+.card {
+    margin-top: 30px; /* Jarak antar kotak materi */
+    padding: 25px;
+    border-left: 6px solid #2d6a4f;
+    background: #f9f9f9;
+    border-radius: 0 10px 10px 0;
+}
+
+.huruf-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 20px 0;
+}
+
+.contoh {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #1b4332;
+    margin-top: 15px;
+    direction: rtl; /* Teks Arab dari kanan */
+}
+
+h2 {
+    color: #2d6a4f;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+:root {
+    --bg-color: #f0f7f4;
+    --card-bg: #ffffff;
+    --text-color: #333;
+    --header-bg: #2d6a4f;
+}
+
+.btn-link {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #2d6a4f;
+    color: white !important;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+.btn-link:hover {
+    background-color: #1b4332;
+    transform: scale(1.05);
+}
+
+/* Memastikan grid rapi di perpustakaan */
+#perpustakaan .grid-latihan {
+    margin-top: 20px;
+}
+
+.search-container {
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: center;
+}
+
