@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Tajwid Lengkap</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>📖 Pintar Tajwid</h1>
+        <p>Belajar hukum bacaan Al-Qur'an dengan mudah</p>
+    </header>
+
+
+    <div class="container">
+        <!-- Navigasi Menu -->
+        <nav class="tabs">
+            <button class="tab-btn active" onclick="bukaMateri(event, 'nun-mati')">Nun Mati</button>
+            <button class="tab-btn" onclick="bukaMateri(event, 'ikhfa-haqiqi')">Ikhfa</button>
+            <button class="tab-btn" onclick="bukaMateri(event, 'idgham')">Idgham</button>
+            <button class="tab-btn" onclick="bukaMateri(event, 'iqlab')">Iqlab</button>
+            <button class="tab-btn" onclick="bukaMateri(event, 'qalqalah')">Qalqalah</button>
+            <button class="tab-btn" onclick="bukaMateri(event, 'ghunnah')">Ghunnah</button>
+            <button class="tab-btn" onclick="bukaMateri(event, 'mim-mati')">Mim Mati</button>
+            <button class="tab-btn" onclick="bukaMateri(event, 'alif-lam')">Alif Lam</button>
+            <button class="tab-btn" onclick="bukaMateri(event, 'lam-ra')">Lam & Ra</button>
+            <button class="tab-btn" onclick="bukaMateri(event, 'mad-lengkap')">13 Macam Mad</button>
+            <button class="tab-btn" onclick="bukaMateri(event, 'perpustakaan')">📚 Perpustakaan</button>
+
+        </nav>
+
+        <!-- Bagian Konten: Hanya satu yang punya class 'active' agar tidak bertumpuk -->
+        
+        <div id="nun-mati" class="content active">
+            <h2>Hukum Nun Mati & Tanwin</h2>
+            <div class="card">
+                <h3>Idzhar Halqi</h3>
+                <p>Membaca jelas suara Nun mati jika bertemu huruf tenggorokan: ا ح خ ع غ هـ</p>
+                <div class="contoh">Contoh: مَنْ اٰمَنَ</div>
+            </div>
+        </div>
+
+        <div id="nun-mati" class="content active">
+            <h2>Ikhfa Haqiqi</h2>
+            <p>Menyamarkan suara Nun Mati/Tanwin jika bertemu salah satu dari 15 huruf:</p>
+            <div class="huruf-container">
+                <span class="huruf">ت</span> <span class="huruf">ث</span> <span class="huruf">ج</span> 
+                <span class="huruf">د</span> <span class="huruf">ذ</span> <span class="huruf">ز</span> 
+                <span class="huruf">س</span> <span class="huruf">ش</span> <span class="huruf">ص</span> 
+                <span class="huruf">ض</span> <span class="huruf">ط</span> <span class="huruf">ظ</span> 
+                <span class="huruf">ف</span> <span class="huruf">ق</span> <span class="huruf">ك</span>
+            </div>
+            <div class="card">
+                <div class="contoh">Contoh: مِنْ تَحْتِهَا</div>
+            </div>
+        </div>
+
+        <div id="nun-mati" class="content active">
+            <h2>Hukum Idgham</h2>
+            <div class="card">
+                <h3>Idgham Bighunnah (ي ن م و)</h3>
+                <p>Melebur disertai dengung.</p>
+                <div class="contoh">Contoh: مَنْ يَقُوْلُ</div>
+            </div>
+            <div class="card" style="border-left-color: #bc4749; margin-top: 20px;">
+                <h3>Idgham Bilaghunnah (ل ر)</h3>
+                <p>Melebur tanpa dengung.</p>
+                <div class="contoh">Contoh: مِنْ رَبِّهِمْ</div>
+            </div>
+        </div>
+
+        <div id="nun-mati" class="content active">
+            <h2>Hukum Iqlab</h2>
+            <p>Mengganti suara Nun mati/tanwin menjadi Mim jika bertemu huruf <strong>Ba (ب)</strong>.</p>
+            <div class="card">
+                <div class="contoh">Contoh: مِنْ بَعْدِ</div>
+            </div>
+        </div>
+
+        <div id="qalqalah" class="content active">
+            <h2>Hukum Qalqalah</h2>
+            <p>Memantulkan suara jika bertemu huruf: <strong>ق ط ب ج د</strong></p>
+            <div class="card">
+                <div class="contoh">Contoh: قُلْ هُوَ اللّٰهُ اَحَدٌ</div>
+            </div>
+        </div>
+
+        <div id="ghunnah" class="content active">
+            <h2>Ghunnah Musyaddadah</h2>
+            <p>Terjadi apabila ada huruf Nun (نّ) atau Mim (مّ) yang memiliki tanda Tasydid.</p>
+            <div class="card">
+                <div class="contoh">Contoh: اِنَّ - ثُمَّ</div>
+            </div>
+        </div>
+
+        <!-- KONTEN: MIM MATI -->
+<div id="mim-mati" class="content active">
+    <h2>Hukum Mim Mati (مْ)</h2>
+    <div class="card">
+        <h3>1. Ikhfa Syafawi</h3>
+        <p>Mim mati bertemu huruf <b>Ba (ب)</b>. Dibaca samar di bibir dengan dengung.</p>
+        <div class="contoh">تَرْمِيْهِمْ بِحِجَارَةٍ</div>
+    </div>
+    <div class="card" style="margin-top: 25px;">
+        <h3>2. Idgham Mimi (Mutamatsilain)</h3>
+        <p>Mim mati bertemu huruf <b>Mim (م)</b>. Dibaca melebur dengan dengung.</p>
+        <div class="contoh">فِيْ قُلُوْبِهِمْ مَرَضٌ</div>
+    </div>
+    <div class="card" style="margin-top: 25px;">
+        <h3>3. Idzhar Syafawi</h3>
+        <p>Mim mati bertemu huruf selain Mim dan Ba. Dibaca jelas di bibir.</p>
+        <div class="contoh">لَعَلَّكُمْ تَتَّقُوْنَ</div>
+    </div>
+</div>
+
+<!-- KONTEN: ALIF LAM -->
+<div id="alif-lam" class="content active">
+    <h2>Hukum Alif Lam (ال)</h2>
+    <div class="card">
+        <h3>1. Alif Lam Qomariyah (Idzhar)</h3>
+        <p>Alif lam bertemu salah satu dari 14 huruf (Al-Baghu). Dibaca jelas.</p>
+        <div class="contoh">الْحَمْدُ - الْقَمَرُ</div>
+    </div>
+    <div class="card" style="margin-top: 25px;">
+        <h3>2. Alif Lam Syamsiyah (Idgham)</h3>
+        <p>Alif lam bertemu huruf selain Qomariyah. Suara 'L' melebur ke huruf berikutnya.</p>
+        <div class="contoh">الشَّمْسُ - الرَّحْمٰنُ</div>
+    </div>
+</div>
+
+<!-- KONTEN: LAM & RA -->
+<div id="lam-ra" class="content active">
+    <h2>Hukum Lam & Ra (Tafkhim & Tarqiq)</h2>
+    <div class="card">
+        <h3>Lam Jalalah (Lafadz Allah)</h3>
+        <p><b>Tebal:</b> Jika sebelumnya Fathah/Dhammah (<i>Abdullah</i>).<br>
+           <b>Tipis:</b> Jika sebelumnya Kasrah (<i>Bismillah</i>).</p>
+    </div>
+    <div class="card" style="margin-top: 25px;">
+        <h3>Hukum Ra (ر)</h3>
+        <p><b>Tafkhim (Tebal):</b> Berharakat Fathah/Dhammah (<i>Rabbana</i>).<br>
+           <b>Tarqiq (Tipis):</b> Berharakat Kasrah (<i>Rizqan</i>).</p>
+    </div>
+</div>
+
+<div id="mad-lengkap" class="content active">
+    <h2>Pembagian 13 Macam Mad (Mad Far'i)</h2>
+    <p>Mad Far'i adalah mad cabang yang panjangnya melebihi Mad Ashli karena bertemu Hamzah atau Sukun.</p>
+
+    <!-- 1. Mad Wajib Muttasil -->
+    <div class="card">
+        <h3>1. Mad Wajib Muttasil</h3>
+        <p>Mad Thabi'i bertemu Hamzah (ء) dalam <b>satu kata</b>. Panjang: 4-5 harakat.</p>
+        <div class="contoh">جَآءَ - السَّمَآءِ</div>
+    </div>
+
+    <!-- 2. Mad Jaiz Munfasil -->
+    <div class="card">
+        <h3>2. Mad Jaiz Munfasil</h3>
+        <p>Mad Thabi'i bertemu Hamzah (ء) di <b>dua kata berbeda</b>. Panjang: 2, 4, atau 5 harakat.</p>
+        <div class="contoh">بِمَآ اُنْزِلَ - يٰٓاَيُّهَا</div>
+    </div>
+
+    <!-- 3. Mad 'Arid Lissukun -->
+    <div class="card">
+        <h3>3. Mad 'Arid Lissukun</h3>
+        <p>Mad Thabi'i bertemu huruf hidup di akhir ayat (Waqaf). Panjang: 2, 4, atau 6 harakat.</p>
+        <div class="contoh">الْعَالَمِيْنَ - تَعْمَلُوْنَ</div>
+    </div>
+
+    <!-- 4. Mad Iwad -->
+    <div class="card">
+        <h3>4. Mad Iwad</h3>
+        <p>Fathatain (ً) di akhir ayat yang dibaca Waqaf (selain Ta Marbuthah). Panjang: 2 harakat.</p>
+        <div class="contoh">عَلِيْمًا ➔ عَلِيْمَا</div>
+    </div>
+
+    <!-- 5. Mad Badal -->
+    <div class="card">
+        <h3>5. Mad Badal</h3>
+        <p>Hamzah bertemu dengan huruf Mad. Panjang: 2 harakat.</p>
+        <div class="contoh">اٰمَنُوْا - اِيْمَانًا</div>
+    </div>
+
+    <!-- 6. Mad Layyin -->
+    <div class="card">
+        <h3>6. Mad Layyin</h3>
+        <p>Huruf Wawu/Ya mati didahului Fathah dan bertemu huruf hidup yang diwaqafkan.</p>
+        <div class="contoh">خَوْفٌ - قُرَيْشٍ</div>
+    </div>
+
+    <!-- 7. Mad Shilah Qashirah -->
+    <div class="card">
+        <h3>7. Mad Shilah Qashirah</h3>
+        <p>Ha Dhamir (ه/هـ) yang diapit huruf hidup (bukan hamzah). Panjang: 2 harakat.</p>
+        <div class="contoh">اِنَّهٗ كَانَ - لَهٗ مَا فِى</div>
+    </div>
+
+    <!-- 8. Mad Shilah Thawilah -->
+    <div class="card">
+        <h3>8. Mad Shilah Thawilah</h3>
+        <p>Ha Dhamir bertemu Hamzah di kata berikutnya. Panjang: 4-5 harakat.</p>
+        <div class="contoh">عِنْدَهٗٓ اِلَّا - بِهٖٓ اَنْ</div>
+    </div>
+
+    <!-- 9. Mad Lazim Muthaqqal Kilmi -->
+    <div class="card">
+        <h3>9. Mad Lazim Muthaqqal Kilmi</h3>
+        <p>Mad Thabi'i bertemu huruf bertasydid dalam satu kata. Panjang: 6 harakat.</p>
+        <div class="contoh">الضَّآلِّيْنَ - الْحَآقَّةُ</div>
+    </div>
+
+    <!-- 10. Mad Lazim Mukhaffaf Kilmi -->
+    <div class="card">
+        <h3>10. Mad Lazim Mukhaffaf Kilmi</h3>
+        <p>Mad Thabi'i bertemu huruf sukun asli dalam satu kata. Panjang: 6 harakat.</p>
+        <div class="contoh">آٰلْآنَ (Hanya ada 2 di QS Yunus)</div>
+    </div>
+
+    <!-- 11. Mad Lazim Muthaqqal Harfi -->
+    <div class="card">
+        <h3>11. Mad Lazim Muthaqqal Harfi</h3>
+        <p>Huruf pembuka surah yang dibaca 6 harakat dan diidghamkan (dengung).</p>
+        <div class="contoh">الٓمّٓ (Bagian Lam ke Mim)</div>
+    </div>
+
+    <!-- 12. Mad Lazim Mukhaffaf Harfi -->
+    <div class="card">
+        <h3>12. Mad Lazim Mukhaffaf Harfi</h3>
+        <p>Huruf pembuka surah yang dibaca 6 harakat tanpa idgham.</p>
+        <div class="contoh">نٓ - قٓ - الٓر (Bagian Ra)</div>
+    </div>
+
+    <!-- 13. Mad Tamkin / Mad Farq -->
+    <div class="card">
+        <h3>13. Mad Tamkin & Mad Farq</h3>
+        <p><b>Tamkin:</b> Ya bertasydid bertemu Ya sukun (<i>Nabiyyiina</i>).<br>
+           <b>Farq:</b> Mad Badal bertemu tasydid untuk membedakan pertanyaan.</p>
+        <div class="contoh">النَّبِيِّيْنَ - قُلْ آلذَّكَرَيْنِ</div>
+    </div>
+</div>
+
+<div id="perpustakaan" class="content active">
+    <h2>Perpustakaan Digital Tajwid</h2>
+    <p>Kumpulan referensi buku dan kitab tajwid untuk memperdalam ilmu (PDF/Link):</p>
+
+    <div class="grid-latihan">
+        <!-- Buku 1 -->
+        <div class="card-latihan">
+            <span class="info-hukum">Kitab Dasar</span>
+            <h3>Tuhfatul Athfal</h3>
+            <p>Kitab matan populer yang membahas hukum Nun Mati dan Mad secara ringkas.</p>
+            <a href="https://tsirwah.com/wp-content/uploads/2024/06/Terjemah-Tuhfatul-Athfal.pdf" target="_blank" class="btn-link">📖 Baca Buku</a>
+        </div>
+
+        <!-- Buku 2 -->
+        <div class="card-latihan">
+            <span class="info-hukum">Panduan Lengkap</span>
+            <h3>Gharibul Qur'an</h3>
+            <p>Panduan untuk mengenal ayat ayat Gharib dalam Quran.</p>
+            <a href="https://fliphtml5.com/cpmkq/xkgu/UMMI_Gharib/" target="_blank" class="btn-link"> 📖 Baca Buku</a>
+        </div>
+
+        <!-- Buku 3 -->
+        <div class="card-latihan">
+            <span class="info-hukum">Referensi</span>
+            <h3>Al-Jazariyah</h3>
+            <p>Matan tingkat lanjut mengenai kaidah-kaidah ilmu tajwid dan qiraah.</p>
+            <a href="wordpress.com" target="_blank" class="btn-link">📖 Baca Buku</a>
+        </div>
+    </div>
+</div>
+
+
+    </div> <!-- Penutup container -->
+
+    <script src="script.js"></script>
+</body>
+</html>
